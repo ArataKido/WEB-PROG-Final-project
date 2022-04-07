@@ -10,28 +10,35 @@ body{
 
 .grid{
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 33% 33% 33%;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25% ;
+    height: 1000px;
 }
 
-.sven{
-    grid-column-start: 1;
-}
-.text_sven{
+.svenchik{
     grid-column-start: 2;
-    grid-row: 1;
+    grid-column-end: 4;
+    grid-row:  1;
+    
 }
-.ursa{
-    grid-column-start: 2;
+.Agility{
+    grid-column-start: -1;
+    grid-column-end: 2;
     grid-row: 2;
+    margin-left: 5em;
+    
 }
-
-.kunka{
-     grid-column-start: 1;
-     grid-row: 3;
+.Intelligence{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row:3;
+}
+ul.sven{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row: 1;
 
 }
-
 img{
-    width: 80%;
+   width: 80%; 
 }
