@@ -3,42 +3,34 @@
     margin: 0px;
     font-family: 'Mate SC', serif;
 }
-
+a{
+    text-decoration: none;
+}
 body{
-    background-color: #556B2F;
+    background-color: saddlebrown;
 }
 
 .grid{
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 25% 25% 25% 25% ;
-    height: 1000px;
-}
-
-.svenchik{
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row:  1;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 0.2fr 1.5fr 1.3fr 1.2fr ;
+    grid-template-areas: "sidebar strength sven sidebar" "sidebar ursa agility sidebar" "sidebar intelligence kunka sidebar";
+    height: 100vh;
     
 }
-.Agility{
-    grid-column-start: -1;
-    grid-column-end: 2;
-    grid-row: 2;
-    margin-left: 5em;
+
+#sven{
+    color: red;
+    
     
 }
-.Intelligence{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row:3;
+#ursa{
+    color: green;
+    grid-area: ursa;
+    
 }
-ul.sven{
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row: 1;
-
-}
-img{
-   width: 80%; 
+#kunka{
+    color: aqua;
+    grid-area:kunka;
+    
 }
