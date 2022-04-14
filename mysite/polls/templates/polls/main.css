@@ -1,0 +1,36 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Mate SC', serif;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: saddlebrown;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 0.2fr 1.5fr 1.3fr 1.2fr ;
+    grid-template-areas: "sidebar strength sven sidebar" "sidebar ursa agility sidebar" "sidebar intelligence kunka sidebar";
+    height: 100vh;
+    
+}
+
+#sven{
+    color: red;
+    
+    
+}
+#ursa{
+    color: green;
+    grid-area: ursa;
+    
+}
+#kunka{
+    color: aqua;
+    grid-area:kunka;
+    
+}
