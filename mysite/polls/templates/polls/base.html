@@ -1,13 +1,37 @@
+{% load static %}
 
-{% extends 'polls/base.html'%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+	<meta name="viewport" content="width=device-width" />
+    <!-- нужно сделать так чтобы название тайтла менялось в зависимости от того на какой странице находится юзер -->
+	<title>{% block title %}{% endblock %}</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+    <!-- 
+    Botany Template 
+    http://www.templatemo.com/preview/templatemo_391_botany 
+    -->
+	<link href="{% static '/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/css/flexslider.css" type="text/css" media="screen" />
+	<link href="{%static '/css/templatemo_style.css'%}" rel="stylesheet" type="text/css">
+	
 
+	<!-- Modernizr -->
+  	<script src="slider/modernizr.js"></script>
 
-{% block title%}
-{% endblock %}
+	<!-- HTML 5 shim for IE backwards compatibility -->
+		<!-- [if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+		</script>
+		<![endif]-->
+	<!-- 
+	Credits
+	Equal Height Columns http://www.hongkiat.com/blog/css-equal-height/ -->    
+</head>
 
-{% block head %}
-
-{% endblock %}
 <body class="templatemo_juice_bg">
 	<div id="main_container">
 		<div class="container" id="home">
@@ -81,3 +105,4 @@
 
 </body>
 </html>
+{% block head %} {% endblock %}
