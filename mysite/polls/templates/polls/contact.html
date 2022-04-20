@@ -6,6 +6,7 @@
 	</div>
 </div>
 <form role="form" action="#" method="post">
+	{% csrf_token %}
 	<div class="row">
 		<div class="col-md-5">
 			<div class="form-group left-inner-addon">
@@ -24,7 +25,8 @@
 		<div class="col-md-7">
 			<div class="form-group left-inner-addon">
 				<span class="glyphicon glyphicon-comment"></span>
-				<textarea name="message" rows="6" class="form-control" id="input_message" placeholder="Message..."></textarea><br>
+				{{form.name}}
+				<!-- <textarea name="message" rows="6" class="form-control" id="input_message" placeholder="Message..."></textarea><br> -->
 				<button type="submit" class="btn btn-primary">Send</button>
 				<button type="reset" class="btn btn-default float_r">Reset</button>
 			</div>

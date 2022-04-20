@@ -1,6 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse
-
+# from .forms import NameForm
 
 def index(request):
     return render(request, "polls/index.html")
@@ -16,4 +15,3 @@ def services(request):
 
 def portfolio(request):
     return render(request, "polls/portfolio.html")
-
