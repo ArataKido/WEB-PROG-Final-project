@@ -1,7 +1,8 @@
+from django import forms
 from django.db import models
 
 class ContactUs(models.Model):
-    name= models.CharField('Name', max_length = 50)
+    name= models.CharField(max_length=32)
     phone = models.CharField('Phone', max_length = 20)
     email = models.CharField('Email', max_length = 50)
     message= models.CharField('Message', max_length = 20)
