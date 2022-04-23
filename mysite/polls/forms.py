@@ -1,14 +1,30 @@
-from .models import Name, Phone, Email, Message
-from django.forms import ModelForm, TextInput, Textarea
+from .models import ContactUs
+from django.forms import ModelForm, TextInput ,Textarea
 
-class NameForm(ModelForm):
+class ContactForm(ModelForm):
     class Meta:
-        model = Name
-        fields = ["name"]
-        widgets = {
+        model = ContactUs
+        fields = ['name', 'phone', 'email', 'message']
+        widget = {
             "name": TextInput(attrs={
-                'class': 'form-group',
                 'placeholder': 'Name', 
-            })
+                'class': 'form-group',
+                'id' : 'input_name',
+            }),
+            "phone": TextInput(attrs={
+                'placeholder': 'Phone', 
+                'class': 'form-group',
+                'id' : 'input_name',
+
+            }),
+
+            "email": TextInput(attrs={
+                'placeholder': 'Email', 
+                'class': 'form-group',
+                'id' : 'input_name',
+
+            }),
+
+
         }
 
