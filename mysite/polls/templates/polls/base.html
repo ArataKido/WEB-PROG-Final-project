@@ -25,7 +25,9 @@
 	Credits
 	Equal Height Columns http://www.hongkiat.com/blog/css-equal-height/ -->
 </head>
-<body class="templatemo_padaut_bg">
+{% with request.resolver_match.url_name as url_name %}
+<body class="{% if url_name == 'home' %} templatemo_juice_bg{% endif %} {% if url_name == 'about' %} templatemo_flower_1 {% endif %}" >
+	
 	<div id="main_container">
 		<div class="container" id="services">
 			<div class="row col-wrap">			 
@@ -49,9 +51,9 @@
 						<button type="submit" class="btn btn-primary" name="Search">Go</button>
 					</form>
 					<div>
-						<a href="#"><img src="images/facebook.png" alt="Like us on Facebook"></a>
-						<a href="#"><img src="images/twitter.png" alt="Follow us on Twitter"></a>
-						<a href="#"><img src="images/rss.png" alt="RSS feeds"></a>
+						<a href="#"><img src="{% static 'images\facebook.png' %}" alt="Like us on Facebook"></a>
+						<a href="#"><img src="{% static 'images\twitter.png' %}" alt="Follow us on Twitter"></a>
+						<a href="#"><img src="{% static 'images\rss.png' %}" alt="RSS feeds"></a>
 					</div>
 				</div>			  	
 				<div id="right_container" class="col col-md-9 col-sm-12">
@@ -69,4 +71,5 @@
 	</div>
     <!-- templatemo 391 botany -->
 </body>
+{% endwith %}
 </html>

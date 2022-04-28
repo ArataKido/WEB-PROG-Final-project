@@ -1,4 +1,3 @@
-import imp
 from django.shortcuts import redirect, render
 from .forms import ContactForm
 from .models import ContactUs
@@ -6,6 +5,7 @@ def index(request):
     return render(request, "polls/index.html")
 
 def about(request):
+
     return render(request, "polls/about.html")
 
 def contact(request):
