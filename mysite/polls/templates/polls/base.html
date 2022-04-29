@@ -26,7 +26,9 @@
 	Equal Height Columns http://www.hongkiat.com/blog/css-equal-height/ -->
 </head>
 {% with request.resolver_match.url_name as url_name %}
-<body class="{% if url_name == 'home' %} templatemo_juice_bg{% endif %} {% if url_name == 'about' %} templatemo_flower_1 {% endif %}" >
+<body class=" {% if url_name == 'home' %} home_bg  {% endif %}
+				{% if url_name == 'about' %} about_bg  {% endif %}
+				{% if url_name == 'contact' %} contact_bg  {% endif %}">
 	
 	<div id="main_container">
 		<div class="container" id="services">

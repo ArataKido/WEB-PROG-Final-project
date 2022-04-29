@@ -19,7 +19,7 @@ a:hover, a:focus { color: #CCFF66; }
 	text-align: center;
 }
 
-.templatemo_juice_bg {
+.home_bg {
   	background: url(../images/templatemo_juice.jpg) no-repeat center center fixed; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
@@ -28,7 +28,7 @@ a:hover, a:focus { color: #CCFF66; }
   	overflow-x: hidden;
 }
 
-.templatemo_flower_1 {
+.about_bg {
 	background: url(../images/templatemo_flower.jpg) no-repeat center center fixed; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
