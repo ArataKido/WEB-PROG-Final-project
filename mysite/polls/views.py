@@ -1,14 +1,44 @@
 from django.shortcuts import redirect, render
-from .forms import ContactForm
-from .models import ContactUs
+from .forms import ContactForm, CommentsForm
+from .models import ContactUs, Comments
 def index(request):
     return render(request, "polls/index.html")
 
 def about(request):
+    # if this is a POST request we need to process the form data
+    if request.method == 'POST':
+        # create a form instance and populate it with data from the request:
+        comment = CommentsForm
+        # check whether it's valid:
+        if comment.is_valid():
+            cd = comment.cleaned_data
+            to_save = Comments(
+                name = cd["comment"]
+            )
+            to_save.save()
+            return redirect('home')
 
-    return render(request, "polls/about.html")
+    else:
+        form = ContactForm()
+        context={
+            'form': form 
+            }
+        return render(request, "polls/about.html", context )
+
+
 
 def contact(request):
+    """routes user to contact page and either creates blank form or saves data from form in database 
+
+    Args:
+        request: creates HttpRequest object which contains data about users request 
+
+    Returns:
+        str: If the django is requesting GET then function will route user to the page contact.html 
+            and at the same time it will create a form.
+            If this is POST request then creates an instance and fills it with data.
+            If data is valid then it saves everything in database and sends the user to home view
+    """
     # if this is a POST request we need to process the form data
     if request.method == 'POST':
         # create a form instance and populate it with data from the request:

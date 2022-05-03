@@ -1,9 +1,8 @@
-from email import message
-from .models import ContactUs
 from django import forms
 
 class ContactForm(forms.Form):
-    
+    """ Instances inside of class are holding parameters which will be sent to html documents
+    """
     name = forms.CharField(widget=forms.TextInput(attrs={
         'name' : "fullname" ,
         'type' : "text" ,
@@ -27,13 +26,23 @@ class ContactForm(forms.Form):
         'placeholder' : "Phone",
     }))
     message = forms.CharField(widget=forms.Textarea(attrs={
-    'name' : "message",
-    'rows' : "6",
-    'class' : "form-control",
-    'id' : "input_message" ,
-    'placeholder' : "Message...",
+        'name' : "message",
+        'rows' : "6",
+        'class' : "form-control",
+        'id' : "input_message" ,
+        'placeholder' : "Message...",
     
     
+    }))
+    
+class CommentsForm(forms.Form):
+    #Instances inside of class are holding parameters which will be sent to html documents
+    comment = forms.CharField(widget=forms.Textarea(attrs={
+        'name' : "comment",
+        'rows' : "12",
+        'class' : "form-control",
+        'id' : "input_comm",
+        'placeholder' : "Leave your comments"
     }))
 
 
