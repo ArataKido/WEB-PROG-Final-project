@@ -20,7 +20,7 @@ a:hover, a:focus { color: #CCFF66; }
 }
 
 .home_bg {
-  	background: url(../images/templatemo_juice.jpg) no-repeat center center fixed; 
+  	background: url(../images/ursa.jpg) no-repeat center center fixed; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -29,7 +29,7 @@ a:hover, a:focus { color: #CCFF66; }
 }
 
 .about_bg {
-	background: url(../images/templatemo_flower.jpg) no-repeat center center fixed; 
+	background: url(../images/phoenix.png) no-repeat center center fixed; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -37,8 +37,8 @@ a:hover, a:focus { color: #CCFF66; }
   	overflow-x: hidden;
 }
 
-.templatemo_flower_2 {
-	background: url(images/templatemo_flower2.jpg) no-repeat center center fixed; 
+.contact_bg {
+	background: url(../images/phantom.jpg) no-repeat center center fixed; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -46,8 +46,8 @@ a:hover, a:focus { color: #CCFF66; }
   	overflow-x: hidden;
 }
 
-.templatemo_garden_bg {
-  	background: url(images/templatemo_garden.jpg) no-repeat center center fixed; 
+.portfolio_bg {
+  	background: url(../images/venga.jpg) no-repeat center center fixed; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -55,8 +55,8 @@ a:hover, a:focus { color: #CCFF66; }
   	overflow-x: hidden;
 }
 
-.templatemo_padaut_bg {
-  	background: url(images/templatemo_padaut.jpg) no-repeat center center fixed; 
+.services_bg {
+  	background: url(../images/qop.jpg) no-repeat center center fixed; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -124,7 +124,7 @@ article { margin-top: 15px; margin-bottom: 15px; }
 .left-inner-addon span { position: absolute; padding: 10px 12px; pointer-events: none; }
 
 .float_r { float: right }
-.img-thumbnail { border-radius: 0px; background-color: rgba(255, 255, 255, 0.2); border: none; }
+.img-thumbnail { border-radius: 0px; background-color: rgba(255, 255, 255, 0.2); border: none; width: 240px; height: 140px;}
 
 #left_container {  background-color: rgba(0, 0, 0, 0.4);  text-align: center; }
 #left_container li a { color: white; }

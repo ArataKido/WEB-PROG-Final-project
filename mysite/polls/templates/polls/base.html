@@ -28,7 +28,10 @@
 {% with request.resolver_match.url_name as url_name %}
 <body class=" {% if url_name == 'home' %} home_bg  {% endif %}
 				{% if url_name == 'about' %} about_bg  {% endif %}
-				{% if url_name == 'contact' %} contact_bg  {% endif %}">
+				{% if url_name == 'contact' %} contact_bg  {% endif %}
+				{% if url_name == 'services' %} services_bg  {% endif %}
+				{% if url_name == 'portfolio' %} portfolio_bg  {% endif %}"
+				>
 	
 	<div id="main_container">
 		<div class="container" id="services">
@@ -50,7 +53,7 @@
 						<div class="form-group">
 							<input type="text" class="form-control" placeholder="Search" id="keyword" name="keyword">
 						</div>
-						<button type="submit" class="btn btn-primary" name="Search">Go</button>
+						<button type="submit" class="btn btn-primary" name="Search" style="margin-top: 10px">Go</button>
 					</form>
 					<div>
 						<a href="#"><img src="{% static 'images\facebook.png' %}" alt="Like us on Facebook"></a>

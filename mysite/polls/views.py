@@ -42,4 +42,3 @@ def portfolio(request):
 def get_background(request):
     background = { 'home' : "home_bg", 'about' : "about_bg" , 'contact' : "contact_bg", 'services' : "services_bg", 'portfolio' : "portfolio_bg",}
     return render (request, "polls/base.html", {"background" : background},   )
-# 

@@ -1,0 +1,132 @@
+[33mcommit 9ef3efaed6fe9fa4d61ce7f8f8ef78fb81cc38ff[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Shahzod <shahzod20030905@gmail.com>
+Date:   Fri Apr 29 19:40:21 2022 +0200
+
+    shit is working
+
+[33mcommit 55765eca9fdf5133b31ad0d5b0651babc6218651[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Shahzod <shahzod20030905@gmail.com>
+Date:   Thu Apr 28 07:54:38 2022 +0200
+
+    Background is working but need to optimise code
+
+[33mcommit 74904468b8e997ac6d441f2ac9dd83de798238ee[m
+Author: Shahzod <shahzod20030905@gmail.com>
+Date:   Sat Apr 23 23:18:44 2022 +0200
+
+    now it is possible to save froms in Contact Us
+
+[33mcommit 930437ad2d0b471c2f06cb43c8db8d4a12134925[m
+Author: ArataKido <shahzod20030905@gmail.com>
+Date:   Sat Apr 23 15:22:52 2022 +0200
+
+    -
+
+[33mcommit c91bf6c33eb3ca614dc980eca131412dddd628b8[m
+Author: Shahzod <shahzod20030905@gmail.com>
+Date:   Sat Apr 23 12:45:53 2022 +0200
+
+    -
+
+[33mcommit edb54cb75c1b7929c8fac099ee7d4981c4f5750a[m
+Author: Shahzod <shahzod20030905@gmail.com>
+Date:   Wed Apr 20 15:08:26 2022 +0200
+
+    v 1.0
+
+[33mcommit c85966d1108680a8789e896ca87167b58df01692[m
+Author: Shahzod <shahzod20030905@gmail.com>
+Date:   Mon Apr 18 02:24:58 2022 +0200
+
+    Added routings and in addition created a pattern which will be used in almost every html document
+
+[33mcommit 7cb46cbe10561911d9071809f64f3c7b86822749[m
+Author: ArataKido <shahzod20030905@gmail.com>
+Date:   Fri Apr 15 03:19:55 2022 +0200
+
+    added base.html file which will be used a an pattern to other web pages
+
+[33mcommit e4d8e237d2b02d7a12c10e1adf6fcd2dcd381b62[m
+Author: ArataKido <shahzod20030905@gmail.com>
+Date:   Fri Apr 15 02:44:01 2022 +0200
+
+    added static
+
+[33mcommit 3a87d736be2f5d759835f3b0762993a74357b16e[m
+Merge: ba25403 d179137
+Author: ArataKido <shahzod20030905@gmail.com>
+Date:   Fri Apr 15 00:04:29 2022 +0200
+
+    -
+
+[33mcommit ba254039fc7287eb6341f0cb5d22f6c7e6522147[m
+Author: ArataKido <shahzod20030905@gmail.com>
+Date:   Fri Apr 15 00:02:44 2022 +0200
+
+    -
+
+[33mcommit d17913777d5e58a7eb2fdb6da3d4438397bb4bf1[m
+Author: Shahzod <shahzod20030905@gmail.com>
+Date:   Fri Apr 15 00:02:05 2022 +0200
+
+    -
+
+[33mcommit 22241bed0c43d9060a60190a073a4452f73c4d56[m
+Author: Shahzod <shahzod20030905@gmail.com>
+Date:   Thu Apr 14 16:48:33 2022 +0200
+
+    -
+
+[33mcommit beda1bb265e0b39756994c99aa973c7a2929e357[m
+Author: ArataKido <shahzod20030905@gmail.com>
+Date:   Thu Apr 14 13:26:49 2022 +0200
+
+    nothing important
+
+[33mcommit 50d57d34cc5f025298a64b7aa319f50b75980692[m
+Author: ArataKido <shahzod20030905@gmail.com>
+Date:   Thu Apr 14 13:14:52 2022 +0200
+
+    -
+
+[33mcommit fb68dc9e650a0fec9a930489de0366f989111e78[m
+Author: ArataKido <shahzod20030905@gmail.com>
+Date:   Thu Apr 14 13:06:43 2022 +0200
+
+    -
+
+[33mcommit e857b0cd35c8288e204b00eb261a73dfc5a2faaf[m
+Author: ArataKido <81490192+ArataKido@users.noreply.github.com>
+Date:   Tue Apr 12 20:50:21 2022 +0200
+
+    Update settings.py
+
+[33mcommit f086a71eb6d93d5350bb15094bebdda4f72a789c[m
+Author: ArataKido <shahzod20030905@gmail.com>
+Date:   Tue Apr 12 15:52:08 2022 +0200
+
+    working with django
+
+[33mcommit efd166add848bbcbb055787cf68c38a3fb4ec5a5[m
+Author: ArataKido <shahzod20030905@gmail.com>
+Date:   Sat Apr 9 09:43:02 2022 +0200
+
+    still trying to fix grid
+
+[33mcommit 931a34476025220cb293c7a4d96ff85a3af209ef[m
+Author: ArataKido <shahzod20030905@gmail.com>
+Date:   Thu Apr 7 23:04:15 2022 +0200
+
+    fixed grid
+
+[33mcommit 784eab24b3d0f2b11299adbe36269413564021c2[m
+Author: Shahzod <shahzod20030905@gmail.com>
+Date:   Wed Apr 6 14:18:30 2022 +0200
+
+    first commit
+
+[33mcommit a246e6bc48a092dc35636f069b0d98af2163acfb[m
+Author: ArataKido <81490192+ArataKido@users.noreply.github.com>
+Date:   Wed Apr 6 14:04:58 2022 +0200
+
+    Initial commit
