@@ -1,6 +1,10 @@
 {% extends 'polls/base.html'%}
 {% load static %}	
 {%block base%}
+
+{% block title%}
+Home
+{% endblock %}
 <article class="row">
 	<div class="col col-md-12">
 		<img src="{% static 'images/dragon.jpg' %}" alt="Pic 1" class="img-thumbnail img-responsive img_left">
