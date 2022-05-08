@@ -24,6 +24,16 @@
 				{{comment.name}}
 				<button type="submit" class="btn btn-primary" style="margin-top: 5px;">Send</button>
 			</div>
+
+			{% for i in to_display %}
+				<div class = "form-group left-inner-addon">
+					<div class="alert alert-info" role="alert">
+						<strong> {{ i.name }} </strong> 
+					</div>
+					
+				</div>
+			{% endfor %}
+			
 		</div>
 	</div>
 </form>

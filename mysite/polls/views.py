@@ -16,14 +16,18 @@ def about(request):
                 name = cd["name"]
             )
             to_save.save()
-            return redirect('home')
+            return redirect('about')
 
     else:
         comment = CommentsForm()
+        to_display = Comments.objects.all()
         context={
-            'comment': comment 
+            'comment': comment ,
+            'to_display': to_display,
             }
         return render(request, "polls/about.html", context )
+
+    
 
 
 
