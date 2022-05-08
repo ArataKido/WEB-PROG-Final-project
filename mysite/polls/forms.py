@@ -37,12 +37,12 @@ class ContactForm(forms.Form):
     
 class CommentsForm(forms.Form):
     #Instances inside of class are holding parameters which will be sent to html documents
-    comment = forms.CharField(widget=forms.Textarea(attrs={
+    name = forms.CharField(widget=forms.TextInput(attrs={
         'name' : "comment",
         'rows' : "12",
         'class' : "form-control",
         'id' : "input_comm",
-        'placeholder' : "Leave your comments"
+        'placeholder' : "Leave your comments",
     }))
 
 

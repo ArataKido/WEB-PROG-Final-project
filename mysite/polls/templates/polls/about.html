@@ -1,29 +1,39 @@
 {% extends 'polls/base.html'%}
 {% block base %}
-						<div class="col col-md-12">
-							<h4>Class aptent taciti</h4>
-							<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Validate <a href="http://validator.w3.org/check?uri=referer" rel="nofollow">XHTML</a> &amp; <a href="http://jigsaw.w3.org/css-validator/check/referer" rel="nofollow">CSS</a>.</p>			
-							<p>Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat.</p>								
-							</div>														            
-						</article>						
-						<article class="row">
-							<div class="col col-md-6">
-								<h4>Mauris in erat justo</h4>
-								<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
-							</div>	
-							<div class="col col-md-6">
-								<h4>Etiam pharetra</h4>
-								<p>Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat.</p>
-							</div>			            
-						</article> 	
-						<article class="row">
-								{{form.name}}
-								<h4>Lorem Ipsum</h4>
-								<p>
-									This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.		
-								</p>
-							</div>				            
-						</article> 		                          
-						
-						
-						{% endblock %}
+<div class="col col-md-12">
+	<h4>Class aptent taciti</h4>
+	<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Validate <a href="http://validator.w3.org/check?uri=referer" rel="nofollow">XHTML</a> &amp; <a href="http://jigsaw.w3.org/css-validator/check/referer" rel="nofollow">CSS</a>.</p>			
+	<p>Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat.</p>								
+	</div>														            
+				
+<article class="row">
+	<div class="col col-md-6">
+		<h4>Mauris in erat justo</h4>
+		<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
+	</div>	
+	<div class="col col-md-6">
+		<h4>Etiam pharetra</h4>
+		<p>Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat.</p>
+	</div>			            
+</article> 	
+<form role="form" action="#" method="post">
+	<div class="form-group left-inner-addon" >
+		<div class="col-md-7">
+			<div class="form-group left-inner-addon">
+				{% csrf_token %}
+				{{comment.name}}
+				<button type="submit" class="btn btn-primary" style="margin-top: 5px;">Send</button>
+			</div>
+		</div>
+	</div>
+</form>
+<article class="row">
+		<h4>Lorem Ipsum</h4>
+		<p>
+			This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.		
+		</p>
+	</div>				            
+</article> 		                          
+
+
+{% endblock %}

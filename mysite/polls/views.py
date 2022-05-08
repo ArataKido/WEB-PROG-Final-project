@@ -8,20 +8,20 @@ def about(request):
     # if this is a POST request we need to process the form data
     if request.method == 'POST':
         # create a form instance and populate it with data from the request:
-        comment = CommentsForm
+        comment = CommentsForm(request.POST)
         # check whether it's valid:
         if comment.is_valid():
             cd = comment.cleaned_data
             to_save = Comments(
-                name = cd["comment"]
+                name = cd["name"]
             )
             to_save.save()
             return redirect('home')
 
     else:
-        form = ContactForm()
+        comment = CommentsForm()
         context={
-            'form': form 
+            'comment': comment 
             }
         return render(request, "polls/about.html", context )
 
