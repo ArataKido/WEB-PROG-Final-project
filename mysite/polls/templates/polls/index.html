@@ -2,9 +2,24 @@
 {% load static %}	
 {%block base%}
 
-{% block title%}
-Home
-{% endblock %}
+
+
+<div class="row">
+	<div class="col col-md-12">
+	
+		<h2>Welcome to Botany</h2> 
+
+		<div class="flexslider">
+		  <ul class="slides">
+			<li><img src="{% static 'images/qop.jpg'%}" alt="slide 1" /></li>
+			<li><img src="{% static 'images/lil pa.jpg'%}" alt="slide 2" /></li>
+			<li><img src="{% static 'images/dragon.jpg'%}" alt="slide 3" /></li>
+		  </ul>
+		</div>
+		
+	</div>
+</div>
+
 <article class="row">
 	<div class="col col-md-12">
 		<img src="{% static 'images/dragon.jpg' %}" alt="Pic 1" class="img-thumbnail img-responsive img_left">

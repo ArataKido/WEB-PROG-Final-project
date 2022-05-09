@@ -42,7 +42,7 @@ class CommentsForm(forms.Form):
         'rows' : "12",
         'class' : "form-control",
         'id' : "input_comm",
-        'placeholder' : "Leave your comments",
+        'placeholder' : "Leave your comment",
     }))
 
 
