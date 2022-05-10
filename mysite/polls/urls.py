@@ -2,7 +2,7 @@ from django.urls import path
 from django.contrib import admin
 from . import views
 
-#this list is used to create a routes to pages
+# this list is used to create a routes to pages
 urlpatterns = [
     path('', views.index, name ='home'),
     path('about-us', views.about, name ='about' ),
