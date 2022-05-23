@@ -4,22 +4,21 @@
 
 
 
-<!-- <div class="row"> -->
-	<!-- <div class="col col-md-12"> -->
-	<!--  -->
-		<!-- <h2>Welcome to Botany</h2>  -->
-<!--  -->
-		<!-- <div class="flexslider"> -->
-		  <!-- <ul class="slides"> -->
-			<!-- <li><img src="{% static 'images/qop.jpg'%}" alt="slide 1" /></li> -->
-			<!-- <li><img src="{% static 'images/lil pa.jpg'%}" alt="slide 2" /></li> -->
-			<!-- <li><img src="{% static 'images/dragon.jpg'%}" alt="slide 3" /></li> -->
-		  <!-- </ul> -->
-		<!-- </div> -->
-		<!--  -->
-	<!-- </div> -->
-<!-- </div> -->
+<div class="row">
+	<div class="col col-md-12">
+	
+		<h2>Welcome to Botany</h2> 
 
+		<div class="flexslider">
+		  <ul class="slides">
+			<li><img src="{% static 'images/phantom.jpg'%}" alt="slide 1" style="width: 750px" /></li>
+			<li><img src="{% static 'images/invoker.jpg'%}" alt="slide 2" style="width: 750px" /></li>
+			<li><img src="{% static 'images/dragon.jpg'%}" alt="slide 3" style="width: 750px" /></li>
+		  </ul>
+		</div>
+		
+	</div>
+</div>
 <article class="row">
 	<div class="col col-md-12">
 		<img src="{% static 'images/dragon.jpg' %}" alt="Pic 1" class="img-thumbnail img-responsive img_left">
@@ -49,5 +48,26 @@
 			velit. Duis tincidunt nec elit non porttitor.</p>
 		<p><a href="#" class="btn btn-primary" role="button">View More</a></p>
 	</div>			            
-</article>                					
+</article>
+
+<!-- jQuery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+
+<!-- FlexSlider -->
+<script defer src="{% static 'slider/jquery.flexslider.js'%}"></script>
+
+<script type="text/javascript">
+  $(function(){
+    SyntaxHighlighter.all();
+  });
+  $(window).load(function(){
+    $('.flexslider').flexslider({
+      animation: "slide",
+      start: function(slider){
+        $('body').removeClass('loading');
+      }
+    });
+  });
+</script>
 {% endblock %}
